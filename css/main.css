@@ -73,8 +73,8 @@ body {
 }
 
 #about-section {
-  margin-top: 1rem;
-  padding-top: 2rem;
+  scroll-margin-top: 50px;
+  padding-top: 2.3rem;
 }
 #about-section .about {
   display: flex;
@@ -92,6 +92,7 @@ body {
 }
 
 #skills-section {
+  scroll-margin-top: 50px;
   padding: 10px;
   background-color: black;
   color: white;
@@ -124,6 +125,9 @@ body {
   background-color: black;
 }
 
+#projects-section {
+  scroll-margin-top: 80px;
+}
 #projects-section .projects {
   display: flex;
   flex-wrap: wrap;
@@ -159,4 +163,9 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+}
+#contact-section .contact a:hover {
+  color: lightgreen;
+  opacity: 1;
+  transition: all 0.25s;
 }/*# sourceMappingURL=main.css.map */

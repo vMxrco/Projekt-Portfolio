@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;500;700&family=Rubik+Iso&display=swap');
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -77,8 +76,8 @@ body {
 }
 
 #about-section {
-    margin-top: 1rem;
-    padding-top: 2rem;
+    scroll-margin-top: 50px;
+    padding-top: 2.3rem;
 
     .about {
         display: flex;
@@ -99,6 +98,7 @@ body {
 }
 
 #skills-section {
+    scroll-margin-top: 50px;
     padding: 10px;
     background-color: black;
     color: white;
@@ -139,6 +139,7 @@ body {
 }
 
 #projects-section {
+    scroll-margin-top: 80px;
     .projects {
         display: flex;
         flex-wrap: wrap;
@@ -179,8 +180,11 @@ body {
             color: white;
             text-decoration: none;
             font-size: 1.5rem;
-
         }
-   
+        a:hover {
+            color: lightgreen;
+            opacity: 1;
+            transition: all 0.25s;
+        } 
   }
 }
