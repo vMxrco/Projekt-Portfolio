@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;500;700&family=Rubik+Iso&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  padding: 5px 0;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+.nav-menu {
+  display: flex;
+  margin: 10px 0px 10px auto; /* pozycjonowanie linków używając marginesów */
+  width: 55%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.nav-menu a {
+  margin: 3px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.nav-menu a:hover {
+  color: rgb(16, 161, 16);
+  opacity: 1;
+  text-decoration: underline;
+  transition: all 0.25s;
+}
+
+#intro-section { /*dodanie obrazka jako tło */
+  height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg);
+  background-size: cover;
+}
+
+#hello-section {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+#hello-section img {
+  max-width: 100%;
+}
+
+.message {
+  display: flex;
+  margin: 20px;
+  padding: 50px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#about-section {
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+#about-section .about {
+  display: flex;
+  justify-content: center;
+}
+#about-section .heading {
+  font-size: 2rem;
+  text-align: center;
+}
+#about-section .info {
+  display: block;
+  font-size: 1.5rem;
+  text-align: left;
+}/*# sourceMappingURL=main.css.map */
