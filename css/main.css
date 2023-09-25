@@ -38,7 +38,7 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 .nav-menu a:hover {
-  color: rgb(16, 161, 16);
+  color: lightgreen;
   opacity: 1;
   text-decoration: underline;
   transition: all 0.25s;
@@ -80,12 +80,83 @@ body {
   display: flex;
   justify-content: center;
 }
-#about-section .heading {
-  font-size: 2rem;
-  text-align: center;
-}
-#about-section .info {
+#about-section .about .info {
   display: block;
   font-size: 1.5rem;
   text-align: left;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#skills-section {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+#skills-section .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+#skills-section .skills-info {
+  text-align: center;
+  padding: 2rem;
+}
+#skills-section .skills-info-name {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+#skills-section .skills-info progress {
+  border: 1px solid white;
+  background-color: white;
+}
+#skills-section .skills-info progress::-webkit-progress-value {
+  background-color: white;
+  border-radius: 0;
+}
+#skills-section .skills-info progress::-webkit-progress-bar {
+  background-color: black;
+}
+
+#projects-section .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+#projects-section .projects-imagebox {
+  margin: 5px;
+  text-align: center;
+}
+#projects-section .projects-imagebox a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+#projects-section .projects-imagebox a img {
+  width: 500px;
+  height: 300px;
+}
+
+#contact-section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+#contact-section .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+#contact-section .contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

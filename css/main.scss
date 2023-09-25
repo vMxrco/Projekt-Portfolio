@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;500;700&family=Rubik+Iso&display=swap');
 
-$primary-color: grey;
-$second-color: rgb(16, 161, 16);
 
 html {
     scroll-behavior: smooth;
@@ -41,7 +39,7 @@ body {
             font-family: "Poppins",Arial, Helvetica, sans-serif;
         }
         a:hover {
-            color: $second-color;
+            color: lightgreen;
             opacity: 1;
             text-decoration: underline;
             transition: all 0.25s;
@@ -85,17 +83,104 @@ body {
     .about {
         display: flex;
         justify-content: center;
-        
-    }
-    .heading {
-        font-size: 2rem;
-        text-align: center;
-    }
-
+   
     .info {
         display: block;
         font-size: 1.5rem;
         text-align: left;
         
     }
+ }
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#skills-section {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    
+    
+    .skills{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:80%;
+        margin: auto;
+
+        &-info {
+            text-align: center;
+            padding: 2rem;
+
+            &-name {
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+            }
+
+            progress {
+                border: 1px solid white;
+                background-color: white;
+       
+            }
+            progress::-webkit-progress-value{
+                background-color: white;
+                border-radius: 0;
+            }
+            progress::-webkit-progress-bar{
+                background-color: black;
+            }
+        }
+        
+    }
+}
+
+#projects-section {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px;
+
+        &-imagebox{
+            margin: 5px;
+            text-align: center;
+                  
+            a{
+            text-decoration: none;
+               font-size: 1.2rem;
+               color: black; 
+
+                img {
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+          
+        }
+    }
+}
+#contact-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+
+    
+   .contact { 
+        display: flex;
+        justify-content:space-evenly;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+        }
+   
+  }
 }
